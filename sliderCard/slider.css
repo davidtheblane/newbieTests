@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.box__slider {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* float: left; */
+  overflow: hidden;
+}
+
+.box__slider .box__container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  /* float: left; */
+  border: 1px solid red;
+}
+
+.box__slider .item {
+  height: 250px;
+  background: grey;
+  line-height: 250px;
+  text-align: center;
+  font-size: 50px;
+  color: #fff;
+  /* float: left; */
+}
