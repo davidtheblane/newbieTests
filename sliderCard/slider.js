@@ -10,9 +10,9 @@ let jumpSlideWidth = 0;
 // Responsive
 responsive = [
   { breakpoint: { width: 0, item: 1 } }, //se width for maior que 0(show 1box)
-  { breakpoint: { width: 480, item: 2 } }, //se width for maior que 480 (show 2box)
-  { breakpoint: { width: 768, item: 3 } }, //se width for maior que 768 (show 4box)
-  { breakpoint: { width: 1024, item: 4 } }, //se width for maior que 1024 (show 4box)
+  { breakpoint: { width: 481, item: 2 } }, //se width for maior que 500 (show 2box)
+  { breakpoint: { width: 769, item: 4 } }, //se width for maior que 900 (show 3box)
+  { breakpoint: { width: 961, item: 6 } }, //se width for maior que 900 (show 4box)
 ];
 
 function load() {
