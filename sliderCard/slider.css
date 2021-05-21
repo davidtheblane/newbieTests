@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background: #808080;
 }
 
 * {
@@ -18,16 +19,50 @@ body {
   width: 100%;
   display: flex;
   flex-direction: row;
+  transition: margin 1s ease;
+  /* flex-wrap: wrap; */
   /* float: left; */
   border: 1px solid red;
 }
 
 .box__slider .item {
   height: 250px;
-  background: grey;
+  background: #000080;
   line-height: 250px;
   text-align: center;
   font-size: 50px;
   color: #fff;
   /* float: left; */
+}
+
+.box__slider .controls {
+  width: 100%;
+  display: flex;
+  /* flex-direction: row; */
+  padding: 15px;
+  border: 1px solid red;
+  justify-content: center;
+}
+
+.box__slider .controls ul {
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.box__slider .controls ul li {
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  border: 1px solid yellow;
+  margin: 4px;
+  line-height: 33px;
+  cursor: pointer;
+}
+
+.box__slider .controls ul li:active {
+  background: green;
+  color: #fff;
 }
