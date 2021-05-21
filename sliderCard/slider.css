@@ -33,11 +33,11 @@ body {
   /* border: 1px solid red; */
 }
 
-.box__slider .title {
+.title {
   margin-top: 1rem;
   font-size: 1rem;
   height: 100%;
-  color: rgba(242, 242, 242, 1);
+  color: var(--white);
   text-align: center;
   line-height: 0.6rem;
 }
@@ -63,15 +63,23 @@ body {
   text-align: center;
   font-size: 1rem;
   border-radius: 10px;
-  color: rgba(242, 242, 242, 1);
+  color: var(--white);
   box-shadow: 4px 2px 10px rgba(242, 242, 242, 0.1);
 }
 
-.item .dev__img {
+.dev__img {
+  margin: 0 auto;
+  background-image: url(./images/dev1_1.jpg);
+  background-size: cover;
   width: 90px;
   height: 90px;
   border-radius: 50%;
   border: 2px solid var(--white);
+}
+
+.dev__img:hover {
+  background-image: url(./images/dev1_2.jpg);
+  transition: 0.5s ease-in;
 }
 
 .item p {
@@ -82,7 +90,7 @@ body {
 
 .social {
   text-decoration: none;
-  color: rgba(242, 242, 242, 1);
+  color: var(--white);
   font-size: 0.7rem;
   padding: 5px;
   border: 1px solid var(--yellow);
@@ -94,7 +102,7 @@ body {
   color: black;
   font-size: 0.7rem;
   background: var(--yellow);
-  transition: background 0.6s ease;
+  transition: background 0.7s ease;
 }
 
 .box__slider .controls {
@@ -117,8 +125,7 @@ body {
   display: inline-block;
   height: 35px;
   width: 35px;
-  color: rgba(242, 186, 82, 1);
-  /* border: 1px solid rgba(242, 242, 242, 1); */
+  color: var(--yellow);
   border-radius: 50%;
   margin: 4px;
   line-height: 33px;
@@ -127,9 +134,9 @@ body {
 
 .box__slider .controls ul li:hover {
   background: black;
-  color: rgba(242, 242, 242, 1);
+  color: var(--white);
 }
 .box__slider .controls ul li:active {
-  background: green;
-  color: rgba(242, 242, 242, 1);
+  background: var(--yellow);
+  color: var(--white);
 }
