@@ -1,0 +1,149 @@
+:root {
+  --red: #e62429;
+  --black: #151515;
+  --gray-dark: #393939;
+  --white: #ffffff;
+  --yellow: #f2ba52;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: -webkit-pictograph;
+}
+
+h3{
+  color: white;
+}
+
+body{
+  background: var(--gray-dark);
+  color: var(--white);
+}
+
+
+main{
+  width: 100%;
+  margin: 10px auto;
+  position: relative;
+  padding: 5px 0;
+}
+
+main .text{
+  padding: 10px;
+  text-align: center;
+  color: #554;
+}
+
+main header{
+  width: 98%;
+  height: 60px;
+  margin: 0 auto;
+  align-items: baseline;
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  border-bottom: 2px solid #ddd;
+}
+
+controls{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+controls p span{
+  font-size: 40px;
+  margin: 0 5px;
+  cursor: pointer;
+  color: white;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  line-height: 19px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+controls p span:hover {
+  background: #222;
+  color: white;
+}
+
+section{
+  width: 98%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  overflow-x: auto;
+}
+
+section::-webkit-scrollbar{
+  display: none;
+}
+
+section .card{
+  min-width: 24%;
+  height: 90%;
+  background: #212020;
+  margin: 0 0.6rem;
+  padding: 6px 0;
+  border-radius: 20px;
+  position: relative;
+  left: 0;
+  transition: 0.5s;
+}
+
+picture{
+  width: 100%;
+  height: 70%;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 20px;
+  
+}
+
+picture img{
+  width: 60%;
+  border-radius:10px;
+  object-fit: cover;
+}
+
+.dev__name{
+  padding: 5px;
+}
+
+.dev__cargo{
+  font-size: 0.6rem;
+  padding: 5px;
+}
+
+.btn__social{
+  width: 80%;
+  font-size: 0.5rem;
+  border: none;
+  margin: auto;
+  padding: 5px;
+  display: flex;
+  height: 1.6rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {  }
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {  }
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {  }
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { }
