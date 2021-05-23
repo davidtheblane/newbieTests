@@ -1,16 +1,16 @@
 let span = document.getElementsByTagName('span');
-let card = document.getElementsByClassName('card');
+let card = document.getElementsByClassName('cards__individual');
 let card_page = Math.ceil(card.length/4);
 let l = 0
 let movePer = 25.34;
 let maxMove = 203;
 
-// Mobile
-let mobile_view = window.matchMedia("(max-width: 768px)");
-if (mobile_view.matches) {
-  movePer = 50.36;
-  maxMove = 504;
-}
+// // Mobile
+// let mobile_view = window.matchMedia("(max-width: 768px)");
+// if (mobile_view.matches) {
+//   movePer = 50.36;
+//   maxMove = 504;
+// }
 
 let right_move = () =>{
   l = l + movePer;

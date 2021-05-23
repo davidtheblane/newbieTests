@@ -8,7 +8,6 @@
 }
 
 
-
 *{
   padding: 0;
   margin: 0;
@@ -42,26 +41,40 @@ h2 .line{
 }
 
 section{
-  width: 75rem;
-  height: 32rem;
+
+  width: 100%;
+  /* width: 1440px; */
+   height: 480px;
+  /*margin: auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  overflow-x: auto;
+  padding: 1rem 0; */
+  /* border: 1px solid red; */
+}
+
+.cards__container{
+  width: 86%;
+  /* width: 1242px; */
   margin: auto;
   display: flex;
   align-items: center;
   text-align: center;
   overflow-x: auto;
-  padding: 1rem 0;
+  padding: 1rem 30px;
   /* border: 1px solid yellow; */
 }
 
-section::-webkit-scrollbar{
+.cards__container::-webkit-scrollbar{
   display: none;
 }
 
-section .card{
-  min-width: 20rem;
-  height: 30rem;
+.cards__individual{
+  min-width: 334px;
+  height: 480px;
   background: var(--superBlack);
-  margin: 0 2.4rem;
+  margin: 0 30px;
   padding: 6px 0;
   border-radius: 18px;
   position: relative;
@@ -69,6 +82,7 @@ section .card{
   box-shadow: 6px 8px 14px rgba(242, 242, 242, 0.1);
   transition: 0.5s;
 }
+
 
 picture{
   width: 100%;
@@ -80,14 +94,15 @@ picture{
 }
 
 picture img{
-  width: 200px;
-  height: 200px;
+  width: 195px;
+  height: 195px;
   border-radius:50%;
   object-fit: cover;
   border: 2px solid var(--white);
 }
 
 .dev__name{
+  width: 100%;
   font-size: 1.5rem;
   font-weight: 300;
   font-style: normal;
@@ -95,16 +110,17 @@ picture img{
 }
 
 .dev__cargo{
+  width: 100%;
   font-size: 1.2rem;
   font-weight: 300;
   font-style: normal;
 }
 
 .btn__social{
+  width: 60%;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 10rem;
   margin: 3rem auto;
   font-size: 1rem;
   font-weight: 500;
@@ -124,27 +140,24 @@ picture img{
 }
 
 controls{
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  justify-content: center;
-  padding-top: 1rem;
-  top: 250px;
+ position: absolute;
+ top: 320px;
+ width: 100%;
   /* border: 1px solid red; */
 
 }
 
 controls p{
   display: flex;
-  margin: 0 auto;
   flex-direction: row;
   justify-content: space-between;
-  width: 94%;
+  margin: 0 auto;
+  width: 93%;
   /* border: 1px solid blueviolet; */
 }
 
 controls p span{
-  font-size: 4rem;
+  font-size: 5rem;
   margin: 0 5px;
   cursor: pointer;
   color: var(--white);
@@ -162,39 +175,39 @@ controls p span:hover {
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {  }
+@media (max-width: 575.98px) { 
+ 
+ }
 
 /* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {  }
+@media (max-width: 767.98px) { 
+  .cards__container{
+ 
+    padding: 1rem 22px;
+    /* border: 1px solid yellow; */
+  }
+  
+  .cards__individual{
+    margin: 0 22px;
+  }
+
+ }
 
 /* Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) {  }
+@media (max-width: 991.98px) { 
+
+ }
 
 /* Large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) { }
+@media (max-width: 1199.98px) { 
 
+  .cards__individual{
+    min-width: 264px;
+  } 
 
-/* controls{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 1rem;
+  picture img{
+    width: 170px;
+    height: 170px;
+  }
 }
 
-controls p span{
-  font-size: 4rem;
-  margin: 0 5px;
-  cursor: pointer;
-  color: white;
-  width: 30px;
-  height: 30px;
-  display: inline-block;
-  line-height: 19px;
-  text-align: center;
-  border-radius: 3px;
-}
-
-controls p span:hover {
-  background: var(--gray-dark);
-  color: white;
-} */
